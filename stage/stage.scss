@@ -1,0 +1,6 @@
+body                { margin:0; padding:20px; background:#DFDFDF;
+  .component-holder { display:flex; flex-direction:row; width:100%; justify-content:space-between;
+                      flex-wrap: wrap; width: 560px; 
+    .mini-component { margin-bottom:30px; }
+  }
+}

@@ -1,0 +1,14 @@
+.mini-component{ width: 117px;
+  .icon-box,
+  .stats-box,
+  .ui-box     { background:white; margin:0 0 4px 0; }
+  .icon-box   { height:92px; display:flex; flex-direction: column; align-items:center; justify-content:center;
+    .icon     {  }
+    .label    {  }
+  }
+  .stats-box  { height:41px; }
+  .ui-box     { height:38px; cursor:pointer; display:flex; justify-content: center; align-items: center;
+    &:hover   { background:#FFFBD5; }
+  }
+  &.hidden    { display:none; }
+}

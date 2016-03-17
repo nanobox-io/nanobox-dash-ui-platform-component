@@ -1,0 +1,11 @@
+.full-component { width: 600px; background: white; padding:20px;
+  .top          { display:flex; align-items: center; position:relative;
+    .icon       { }
+    .label      { }
+    .back-btn   { cursor:pointer; position:absolute; right:0; display: flex; align-items:center;  }
+  }
+  .details      {
+    .descript   { width:300px; }
+    .config     { }
+  }
+}

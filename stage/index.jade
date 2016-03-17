@@ -1,0 +1,41 @@
+doctype html
+html(lang="en")
+  
+  head
+    title Platform Component
+
+    // build:remove 
+    link(href="stage/css/stage.css", rel="stylesheet")
+    //endbuild
+
+    // build:css style.css
+    link(href="css/platform-component-svg.css", rel="stylesheet")
+    link(href="css/main.css", rel="stylesheet")
+    // endbuild
+
+  body
+    .component-holder
+
+    // build:remove 
+    script(src="bower-libs/eventify/dist/eventify.min.js")
+    script(src="bower-libs/jquery/dist/jquery.js")
+    script(src="bower-libs/velocity/velocity.js")
+    script(src="bower-libs/jade/runtime.js")
+    script(src="bower-libs/shadow-icons/rel/app.js")
+    // endbuild
+
+    // build:js app.js
+    script(src="js/platform-component-svg.js")
+    script(src="js/jade-templates.js")
+    script(src="js/main.js")
+    // endbuild
+    
+    // build:remove 
+    script(src="stage/js/stage.js")
+    // endbuild
+    
+    
+    
+    // build:remove 
+    script(src="http://localhost:35729/livereload.js")
+    // endbuild

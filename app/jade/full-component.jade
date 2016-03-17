@@ -1,0 +1,13 @@
+.full-component
+  .top
+    .icon
+      img.shadow-icon(data-src="#{kind}", scalable=true)
+    .label #{name}
+    .back-btn
+      img.shadow-icon(data-src="back-arrow")
+      .txt Back
+  .details
+    .descript All web requests are routed through the load balancer. If your app has a horizontally scaled web service, the load balancer round-robins requests to your various web instances. If you need redundancy, switch to  
+    .config
+      .simple
+      .scalable

@@ -1,11 +1,12 @@
 {
   "name": "platform-component",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "dependencies": {
     "jquery": "*",
     "velocity": "~1.1.0",
     "shadow-icons": "tolmark12/shadow-icons-js",
-    "eventify": "sdomino/eventify"
+    "eventify": "sdomino/eventify",
+    "hourly-stats": "nanobox-io/nanobox-dash-ui-hourly-stats"
   },
   "ignore": [
     "app",

@@ -1,4 +1,5 @@
 View = require 'view'
+fullComponent = require 'jade/full-component'
 
 module.exports = class FullView extends View
 
@@ -7,7 +8,7 @@ module.exports = class FullView extends View
     @build $el
 
   build : ($el) ->
-    @$node = $ jadeTemplate['full-component']( {kind: @id, name:nanobox.PlatformComponent.getHumanName(@id)} )
+    @$node = $ fullComponent( {kind: @id, name:nanobox.PlatformComponent.getHumanName(@id)} )
     @$node.css opacity: 0
     $el.append @$node
     shadowIconsInstance.svgReplaceWithString pxSvgIconString, @$node

@@ -6,7 +6,7 @@
     .icon     {  }
     .label    {  }
   }
-  .stats-box  { height:41px; }
+  .stats-box  { height:41px; padding:0; }
   .ui-box     { height:38px; cursor:pointer; display:flex; justify-content: center; align-items: center;
     &:hover   { background:#FFFBD5; }
   }

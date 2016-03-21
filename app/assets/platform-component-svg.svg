@@ -87,7 +87,7 @@
 	<ellipse transform="matrix(0.8869 -0.4619 0.4619 0.8869 44.9067 378.2749)" class="st1" cx="795.1" cy="97.4" rx="1.5" ry="1.5"/>
 	<line class="st1" x1="796.3" y1="98.2" x2="798.7" y2="99.3"/>
 </g>
-<g>
+<g id="back-arrow">
 	<polyline class="st2" points="885,104.2 879.8,99 885,93.8 	"/>
 	<line class="st2" x1="879.8" y1="99" x2="894" y2="99"/>
 </g>

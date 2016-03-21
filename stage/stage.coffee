@@ -1,6 +1,4 @@
-dataShim = require './xtra/data-shim'
-
-$holder  = $ ".component-holder"
+dataShim         = require './xtra/data-shim'
 
 # ------------------------------------ Event handlers
 
@@ -17,11 +15,16 @@ resetView = (ev, id) =>
     component.setState "mini"
 
 # ------------------------------------ Create the components
+
 components = []
+$holder    = $ ".component-holder"
 
 for id in dataShim.ids
   component = new nanobox.PlatformComponent( $holder, id )
   component.setState "mini"
+  component.updateLiveStats statsDataSimultor.generateFakeLiveStats()  # Load fake data (only included for testing : hourly-stats/rel/data-shim.js)
+  # Events
   component.on "show-admin", showAdmin
   component.on "close-detail-view", resetView
+
   components.push component

@@ -9,6 +9,7 @@ html(lang="en")
     link(href="bower-libs/hourly-stats/rel/style.css", rel="stylesheet")
     //endbuild
 
+    
     // build:css style.css
     link(href="css/platform-component-svg.css", rel="stylesheet")
     link(href="css/main.css", rel="stylesheet")
@@ -25,6 +26,7 @@ html(lang="en")
     script(src="bower-libs/d3/d3.min.js")
     script(src="bower-libs/hourly-stats/rel/app.js")
     script(src="bower-libs/shadow-icons/rel/app.js")
+    script(src="https://use.typekit.net/cqd5kth.js")
     // endbuild
 
     // build:js app.js
@@ -37,7 +39,8 @@ html(lang="en")
     script(src="stage/js/stage.js")
     // endbuild
     
-    
+    script(type="text/javascript").
+      try{Typekit.load({ async: true });}catch(e){}
     
     // build:remove 
     script(src="http://localhost:35729/livereload.js")

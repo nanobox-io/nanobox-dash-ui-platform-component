@@ -32,7 +32,7 @@ wrap         = require 'gulp-wrap'
 
 jadeStagePath     = 'stage/index.jade'
 jadePath          = 'app/jade/**/*.jade'
-cssPath           = 'app/scss/**/*.scss'
+cssPath           = ['app/scss/**/*.scss', 'libs/core-styles/**/*.scss']
 cssStagePath      = 'stage/stage.scss'
 appJsPath         = 'app/coffee/**/*.coffee'
 stageJsPath       = 'stage/**/*.coffee'
@@ -58,17 +58,15 @@ html = (cb)->
     .on('end', cb)
 
 css = (cb)->
-  # Stage css - not included in build
   gulp.src( cssPath )
-    .pipe sass({errLogToConsole: true})
+    .pipe sass().on('error', sass.logError)
     .pipe autoprefixer( browsers: ['last 1 version'],cascade: false )
     .pipe gulp.dest('./server/css')
     .on('end', cb)
 
 cssStage = (cb)->
-  # Stage css - not included in build
   gulp.src( cssStagePath )
-    .pipe sass({errLogToConsole: true})
+    .pipe sass().pipe sass().on('error', sass.logError)
     .pipe autoprefixer( browsers: ['last 1 version'],cascade: false )
     .pipe gulp.dest('./server/stage/css')
     .on('end', cb)

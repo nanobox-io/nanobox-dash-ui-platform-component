@@ -4,12 +4,15 @@
   .ui-box     { background:white; margin:0 0 4px 0; }
   .icon-box   { height:92px; display:flex; flex-direction: column; align-items:center; justify-content:center;
     .icon     {  }
-    .label    { font-weight: bold; text-transform: uppercase; font-size:11px; color:#5F7C87; width:80px; text-align:center; }
+    .label    { font-weight: bold; text-transform: uppercase; font-size:11px; color:$slate-blue; width:80px; text-align:center; }
   }
-  .stats-box  { height:41px; padding:0; }
+  .stats-box  { padding:2px 0; }
   .ui-box     { height:38px; cursor:pointer; display:flex; justify-content: center; align-items: center;
-    &:hover   { background:#FFFBD5; }
-    .label    { font-size:11px; font-style: italic; color:#5F7C87; font-weight:600;}
+    .label    { font-size:11px; font-style: italic; color:$slate-blue; font-weight:600; margin:0 0 0 4px;}
+    &:hover   { background:$link-blue;
+      .label  { color:white; }
+      svg *   { stroke:white; }
+    }
   }
   &.hidden    { display:none; }
 }

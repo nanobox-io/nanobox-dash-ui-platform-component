@@ -4,7 +4,7 @@ FullView = require 'full-view'
 class PlatformComponent
 
   constructor : (@$el, @id) ->
-    Eventify.enhance @
+    Eventify.extend @
     @events     = {}
     shadowIcons = new pxicons.ShadowIcons()
 

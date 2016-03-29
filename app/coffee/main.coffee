@@ -17,9 +17,6 @@ class PlatformComponent
       when "mini"   then @destroyCurrentComponent @buildMiniView
       when "full"   then @destroyCurrentComponent @buildFullView
 
-  updateLiveStats : (data) ->
-    @component.updateLiveStats data
-
   # ------------------------------------ Methods
 
   destroyCurrentComponent : (newComponentCb) ->

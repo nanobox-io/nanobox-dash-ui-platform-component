@@ -15,3 +15,6 @@ module.exports = class FullView extends View
 
   onAdminClick : (e) ->
     @adminCb @id
+
+  destroy : () ->
+    $(".back-btn", @$node).off()

@@ -17,6 +17,11 @@ class PlatformComponent
       when "mini"   then @destroyCurrentComponent @buildMiniView
       when "full"   then @destroyCurrentComponent @buildFullView
 
+  destroy : () ->
+    @off()
+    @component.destroy()
+    @component = null
+
   # ------------------------------------ Methods
 
   destroyCurrentComponent : (newComponentCb) ->

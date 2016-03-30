@@ -28,9 +28,7 @@ class PlatformComponent
 
   buildMiniView : () => @component = new MiniView @$el, @id, @triggerFullView
   buildFullView : () => @component = new FullView @$el, @id, @triggerClose
-  hide : -> @component.destroy()
-
-  # Temp Event functionality
+  hide          :    -> @component.destroy()
 
   # ------------------------------------ Events
 

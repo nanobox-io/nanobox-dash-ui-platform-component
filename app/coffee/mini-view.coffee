@@ -9,14 +9,10 @@ module.exports = class MiniView extends View
 
   build : ($el) ->
     @$node = $ miniComponent( {kind: @id, name:nanobox.PlatformComponent.getHumanName(@id)} )
-    @$node.css opacity: 0
     $el.append @$node
     shadowIconsInstance.svgReplaceWithString pxSvgIconString, @$node
-
     @addStats $ ".stats-box", @$node
-
     $(".ui-box", @$node).on "click", (e)=> @onAdminClick(e)
-    @fadeIn()
 
   addStats : ($el) ->
     @stats = new nanobox.HourlyStats $el, nanobox.HourlyStats.micro

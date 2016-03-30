@@ -25,5 +25,6 @@ module.exports = class MiniView extends View
   onAdminClick : (e) ->
     @onShowAdmin @id
 
-  destroy : () ->
+  destroy : (cb) ->
     $(".ui-box", @$node).off()
+    super cb

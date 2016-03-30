@@ -32,7 +32,9 @@ class PlatformComponent
 
 
   buildMiniView : () => @component = new MiniView @$el, @id, @triggerFullView
-  buildFullView : () => @component = new FullView @$el, @id, @triggerClose
+  buildFullView : () =>
+    console.log "build fuill"
+    @component = new FullView @$el, @id, @triggerClose
   hide          :    -> @component.destroy()
 
   # ------------------------------------ Events

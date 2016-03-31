@@ -3,11 +3,15 @@ FullView = require 'full-view'
 
 class PlatformComponent
 
-  constructor : (@$el, @id) ->
+  ###
+  @$el             : Jquery element to attach to
+  @componentKind   : The type of platform component (must be one of the class kinds listed below)
+  @componentId     : Id of the component
+  ###
+  constructor : (@$el, @componentKind, @componentId) ->
     Eventify.extend @
     @events     = {}
     shadowIcons = new pxicons.ShadowIcons()
-
 
   # ------------------------------------ API
 
@@ -31,14 +35,13 @@ class PlatformComponent
       newComponentCb()
 
 
-  buildMiniView : () => @component = new MiniView @$el, @id, @triggerFullView
-  buildFullView : () =>
-    @component = new FullView @$el, @id, @triggerClose
+  buildMiniView : () => @component = new MiniView @$el, @componentKind, @triggerFullView
+  buildFullView : () => @component = new FullView @$el, @componentKind, @triggerClose, @componentId
   hide          :    -> @component.destroy()
 
   # ------------------------------------ Events
 
-  triggerFullView : () => @fire "show-admin", @id
+  triggerFullView : () => @fire "show-admin", @componentId
   triggerClose    : () => @fire "close-detail-view"
 
   # ------------------------------------ Class vars and methods

@@ -6,7 +6,7 @@ statsDataSimultor.createFakeStatDataProvider()
 # Called when the user clicks "Admin"
 showAdmin = (ev, id) =>
   for component in components
-    if id == component.id
+    if id == component.componentId
       component.setState "full"
     else
       component.setState "hidden"
@@ -20,11 +20,13 @@ resetView = (ev, id) =>
 components = []
 $holder    = $ ".component-holder"
 
-for id in dataShim.ids
-  component = new nanobox.PlatformComponent( $holder, id )
+components.push new nanobox.PlatformComponent( $holder, nanobox.PlatformComponent.loadBalancer , "lb1" )
+components.push new nanobox.PlatformComponent( $holder, nanobox.PlatformComponent.logger       , "lg1" )
+components.push new nanobox.PlatformComponent( $holder, nanobox.PlatformComponent.healthMonitor, "hm1" )
+components.push new nanobox.PlatformComponent( $holder, nanobox.PlatformComponent.router       , "rt1" )
+components.push new nanobox.PlatformComponent( $holder, nanobox.PlatformComponent.storage      , "st1" )
+
+for component in components
   component.setState "mini"
-  # Events
   component.on "show-admin", showAdmin
   component.on "close-detail-view", resetView
-
-  components.push component

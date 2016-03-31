@@ -1,6 +1,6 @@
 module.exports = class View
 
-  constructor: ($el, @id, @adminCb) ->
+  constructor: ($el, @componentKind, @adminCb) ->
 
   destroy : (cb) ->
     $(".ui-box", @$node).off()

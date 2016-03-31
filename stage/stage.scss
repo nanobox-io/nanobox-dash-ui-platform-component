@@ -1,6 +1,6 @@
-body                { margin:0; padding:20px; background:#DFDFDF;
+body                { margin:0; padding:20px 40px; background:#DFDFDF;
   .component-holder { display:flex; flex-direction:row; width:100%; justify-content:space-between;
-                      flex-wrap: wrap; width: 560px; 
+                      flex-wrap: wrap; width: 600px;
     .mini-component { margin-bottom:30px; }
   }
 }

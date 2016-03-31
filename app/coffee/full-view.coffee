@@ -8,10 +8,14 @@ module.exports = class FullView extends View
     @build $el
 
   build : ($el) ->
-    @$node = $ fullComponent( {kind: @id, name:nanobox.PlatformComponent.getHumanName(@id)} )
+    details = nanobox.PlatformComponent.getComponentDetails @id
+    @$node = $ fullComponent( {kind: @id, name:details.friendlyName, description:details.description} )
     $el.append @$node
     shadowIconsInstance.svgReplaceWithString pxSvgIconString, @$node
     $(".back-btn", @$node).on "click", (e)=> @onCloseClick(e)
+
+    platformComponent = new nanobox.ClobberBox()
+    platformComponent.build $('.component-div', @$node), nanobox.ClobberBox.PLATFORM_COMPONENT, clobberBoxDataShim.getPlatformComponent("lb", "Load Balancer", "load-balancer")
 
   onAdminClick : (e) ->
     @adminCb @id

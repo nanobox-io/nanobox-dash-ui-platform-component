@@ -1,11 +1,27 @@
-.full-component { width: 600px; background: white; padding:20px;
-  .top          { display:flex; align-items: center; position:relative;
-    .icon       { }
-    .label      { }
-    .back-btn   { cursor:pointer; position:absolute; right:0; display: flex; align-items:center;  }
+.full-component  { width: 600px;
+  .overview      { background: white; padding:18px 30px 22px; color:$slate-blue;
+    .top         { display:flex; align-items: center; position:relative; margin-bottom:10px;
+      .icon      { }
+      .label     { text-transform: uppercase; font-weight:$bold; letter-spacing: 0.08em; font-size: 20px; margin-left:20px; }
+      .back-btn  { cursor:pointer; position:absolute; right:-20px; display: flex; align-items:center; font-size:14px; font-style:italic; font-weight:$medium; color:$slate-link;
+        .txt     { margin-left:7px;  }
+        &:hover  { color:$link-blue }
+      }
+    }
+    .details              { font-size: 14px; display:flex;
+      .descript           { width:300px; }
+      .config             { flex-grow: 1; padding-left:20px; font-style:italic;
+        .title            { font-size:15px; font-weight:$medium; border-bottom:#E7E7E7 solid 1px; width:100%; padding-bottom:3px; }
+        .options          { display:flex; font-size:14px; margin-top:15px;
+          > *             { border-bottom: solid 4px #DFDFDF; padding-bottom:2px;
+            &.active      { border-color: $link-blue; color:$link-blue; }
+            &:first-child { margin-right:30px;}
+          }
+        }
+      }
+    }
   }
-  .details      {
-    .descript   { width:300px; }
-    .config     { }
+  .component-div { height:50px; background:#E5E5E5; border:solid white 1px; padding-top: 30px; margin-top:20px;
+
   }
 }

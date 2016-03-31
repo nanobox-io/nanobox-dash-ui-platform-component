@@ -8,7 +8,9 @@ module.exports = class MiniView extends View
     @build $el
 
   build : ($el) ->
-    @$node = $ miniComponent( {kind: @id, name:nanobox.PlatformComponent.getHumanName(@id)} )
+    details = nanobox.PlatformComponent.getComponentDetails @id
+
+    @$node = $ miniComponent( {kind: @id, name:details.friendlyName} )
     $el.append @$node
     shadowIconsInstance.svgReplaceWithString pxSvgIconString, @$node
     @addStats $ ".stats-box", @$node

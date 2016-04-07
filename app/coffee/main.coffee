@@ -40,7 +40,7 @@ class PlatformComponent
   buildFullView : () =>
     @component = new FullView @$el, @componentKind, @triggerClose, @componentId
     @box       = @component.box
-    console.log @box
+
   hide          :    -> @component.destroy()
 
   # ------------------------------------ Events

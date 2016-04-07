@@ -19,12 +19,13 @@ module.exports = class FullView extends View
       id                  : @componentId
       name                : details.friendlyName
       serviceType         : @componentKind
-    platformComponent = new nanobox.ClobberBox()
-    platformComponent.build $('.component-div', @$node), nanobox.ClobberBox.PLATFORM_COMPONENT, data
+    @box = new nanobox.ClobberBox()
+    @box.build $('.component-div', @$node), nanobox.ClobberBox.PLATFORM_COMPONENT, data
 
   onAdminClick : (e) ->
     @adminCb @componentKind
 
   destroy : (cb) ->
+    @box?.destroy()
     $(".back-btn", @$node).off()
     super cb

@@ -35,8 +35,12 @@ class PlatformComponent
       newComponentCb()
 
 
-  buildMiniView : () => @component = new MiniView @$el, @componentKind, @triggerFullView
-  buildFullView : () => @component = new FullView @$el, @componentKind, @triggerClose, @componentId
+  buildMiniView : () =>
+    @component = new MiniView @$el, @componentKind, @triggerFullView
+  buildFullView : () =>
+    @component = new FullView @$el, @componentKind, @triggerClose, @componentId
+    @box       = @component.box
+    console.log @box
   hide          :    -> @component.destroy()
 
   # ------------------------------------ Events

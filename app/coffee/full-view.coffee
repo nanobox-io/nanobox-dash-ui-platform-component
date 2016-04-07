@@ -20,7 +20,7 @@ module.exports = class FullView extends View
       name                : details.friendlyName
       serviceType         : @componentKind
     @box = new nanobox.ClobberBox()
-    @box.build $('.component-div', @$node), nanobox.ClobberBox.PLATFORM_COMPONENT, data
+    @box.build $('.bg-div', @$node), nanobox.ClobberBox.PLATFORM_COMPONENT, data
 
   onAdminClick : (e) ->
     @adminCb @componentKind

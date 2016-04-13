@@ -24,7 +24,8 @@
 
   // TODO : Figure out how to show the background..
   .component-div {
-    .bg-div      { background:#E5E5E5; border:solid white 1px; padding-top: 30px; margin-top:20px; }
-
+    .bg-div      { padding-top: 30px; margin-top:20px; position: relative;
+      &:before   { z-index: -1; position:absolute; height:calc(100% - 40px); background:#E5E5E5; border:solid white 1px; content:""; width:597px; display:block; top:-0px;}
+    }
   }
 }

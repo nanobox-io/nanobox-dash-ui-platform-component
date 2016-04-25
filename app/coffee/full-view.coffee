@@ -11,7 +11,7 @@ module.exports = class FullView extends View
     details = nanobox.PlatformComponent.getComponentDetails @componentKind
     @$node = $ fullComponent( {kind: @componentKind, name:details.friendlyName, description:details.description} )
     $el.append @$node
-    shadowIconsInstance.svgReplaceWithString pxSvgIconString, @$node
+    castShadows @$node
     $(".back-btn", @$node).on "click", (e)=> @onCloseClick(e)
 
     data =

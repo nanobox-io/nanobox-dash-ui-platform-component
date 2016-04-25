@@ -12,7 +12,7 @@ module.exports = class MiniView extends View
 
     @$node = $ miniComponent( {kind: @id, name:details.friendlyName} )
     $el.append @$node
-    shadowIconsInstance.svgReplaceWithString pxSvgIconString, @$node
+    castShadows @$node
     @addStats $ ".stats-box", @$node
     $(".ui-box", @$node).on "click", (e)=> @onAdminClick(e)
 

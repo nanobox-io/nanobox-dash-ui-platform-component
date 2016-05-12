@@ -20,11 +20,11 @@ resetView = (ev, id) =>
 components = []
 $holder    = $ ".component-holder"
 
-components.push new nanobox.PlatformComponent( $holder, nanobox.PlatformComponent.loadBalancer , "lb1" )
-components.push new nanobox.PlatformComponent( $holder, nanobox.PlatformComponent.logger       , "lg1" )
-components.push new nanobox.PlatformComponent( $holder, nanobox.PlatformComponent.healthMonitor, "hm1" )
-components.push new nanobox.PlatformComponent( $holder, nanobox.PlatformComponent.router       , "rt1" )
-components.push new nanobox.PlatformComponent( $holder, nanobox.PlatformComponent.storage      , "st1" )
+components.push new nanobox.PlatformComponent( $holder, nanobox.PlatformComponent.loadBalancer , "lb1", false )
+components.push new nanobox.PlatformComponent( $holder, nanobox.PlatformComponent.logger       , "lg1", false )
+components.push new nanobox.PlatformComponent( $holder, nanobox.PlatformComponent.healthMonitor, "hm1", false )
+components.push new nanobox.PlatformComponent( $holder, nanobox.PlatformComponent.router       , "rt1", true )
+components.push new nanobox.PlatformComponent( $holder, nanobox.PlatformComponent.storage      , "st1", false )
 
 for component in components
   component.setState "mini"

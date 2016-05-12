@@ -13,8 +13,10 @@
       .config             { flex-grow: 1; padding-left:20px; font-style:italic;
         .title            { font-size:15px; font-weight:$medium; border-bottom:#E7E7E7 solid 1px; width:100%; padding-bottom:3px; }
         .options          { display:flex; font-size:14px; margin-top:15px;
-          > *             { border-bottom: solid 4px #DFDFDF; padding-bottom:2px;
-            &.active      { border-color: $link-blue; color:$link-blue; }
+          .option         { display:flex; align-items:center; cursor: pointer;
+            input         { margin-right: 8px;; }
+            .txt          { border-bottom: solid 4px #DFDFDF; padding-bottom:2px; }
+            &.active .txt      { border-color: $link-blue; color:$link-blue; }
             &:first-child { margin-right:30px;}
           }
         }

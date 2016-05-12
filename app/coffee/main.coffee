@@ -8,7 +8,7 @@ class PlatformComponent
   @componentKind   : The type of platform component (must be one of the class kinds listed below)
   @componentId     : Id of the component
   ###
-  constructor : (@$el, @componentKind, @componentId) ->
+  constructor : (@$el, @componentKind, @componentId, @isSplitable) ->
     Eventify.extend @
     @events     = {}
     shadowIcons = new pxicons.ShadowIcons()
@@ -38,7 +38,7 @@ class PlatformComponent
   buildMiniView : () =>
     @component = new MiniView @$el, @componentKind, @triggerFullView
   buildFullView : () =>
-    @component = new FullView @$el, @componentKind, @triggerClose, @componentId
+    @component = new FullView @$el, @componentKind, @triggerClose, @componentId, @isSplitable
     @box       = @component.box
 
   hide          :    -> @component.destroy()

@@ -12,7 +12,11 @@
       .config
         .title Configuration
         .options
-          .simple.active Simple
-          .scalable Scalable
+          .option.simple.active
+            input(type="radio" checked="checked" value="Mr" name="config")
+            .txt Simple
+          .option.scalable
+            input(type="radio" value="Mr" name="config")
+            .txt Scalable
   .component-div
     .bg-div

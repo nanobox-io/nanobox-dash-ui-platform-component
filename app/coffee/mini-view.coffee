@@ -17,7 +17,7 @@ module.exports = class MiniView extends View
     $(".ui-box", @$node).on "click", (e)=> @onAdminClick(e)
 
   addStats : ($el) ->
-    @stats = new nanobox.HourlyStats "micro", $el
+    @stats = new nanobox.HourlyStats $el, {view:"micro"}
     @stats.build()
 
   updateLiveStats : (data) ->

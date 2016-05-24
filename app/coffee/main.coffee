@@ -65,6 +65,8 @@ class PlatformComponent
       when PlatformComponent.storage       then return "Storage"
 
   @getComponentDetails : (id) ->
+    console.log "getting details for : #{id}"
+
     switch id
       when PlatformComponent.loadBalancer
         return {

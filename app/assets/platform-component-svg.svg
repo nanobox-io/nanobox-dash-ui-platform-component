@@ -1,94 +1,187 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="svgs" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="1020.7px" height="205px" viewBox="0 0 1020.7 205" style="enable-background:new 0 0 1020.7 205;" xml:space="preserve">
+	 viewBox="0 0 1020.7 205" style="enable-background:new 0 0 1020.7 205;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:none;stroke:#5F7C87;stroke-width:1.7432;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st1{fill:none;stroke:#678C9C;stroke-width:1.5;stroke-miterlimit:10;}
 	.st2{fill:none;stroke:#729EB0;stroke-linecap:round;stroke-miterlimit:10;}
+	.st3{fill:#5ECC81;stroke:#5ECC81;stroke-width:2;stroke-miterlimit:10;}
+	.st4{fill:none;stroke:#2B8258;stroke-width:1.7038;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 </style>
-<g id="load-balancer">
-	<polyline class="st0" points="48.4,91 71.3,105.5 81.8,99 	"/>
-	<polyline class="st0" points="81.8,105.1 71.3,111.6 48.4,97.1 48.4,84.9 71.3,99.4 81.8,92.9 	"/>
-	<line class="st0" x1="43.9" y1="94.3" x2="66.9" y2="108.8"/>
-	<polygon class="st0" points="43.9,88.2 66.9,102.7 66.9,114.9 43.9,100.4 	"/>
-	<line class="st0" x1="81.8" y1="92.6" x2="104.7" y2="107.2"/>
-	<polyline class="st0" points="81.8,98.7 104.7,113.3 104.7,101.1 81.8,86.6 81.9,92.8 71.5,86.2 48.5,100.7 48.5,112.9 71.5,98.4 
-		81.9,105 	"/>
-	<polyline class="st0" points="94.2,106.8 71.2,92.3 60.8,98.9 	"/>
-	<polyline class="st0" points="60.8,92.8 71.2,86.2 94.2,100.7 94.2,112.9 71.2,98.4 60.8,105 	"/>
-	<polyline class="st0" points="94.3,91 71.3,105.5 60.9,99 	"/>
-	<polyline class="st0" points="60.9,105.1 71.3,111.6 94.3,97.1 94.3,84.9 71.3,99.4 60.9,92.9 	"/>
-	<line class="st0" x1="98.8" y1="94.3" x2="75.8" y2="108.8"/>
-	<polygon class="st0" points="98.8,88.2 75.8,102.7 75.8,114.9 98.8,100.4 	"/>
-	<polyline class="st0" points="60.9,98.7 37.9,113.3 37.9,101.1 60.9,86.6 60.9,92.6 37.9,107.2 	"/>
-	<polyline class="st0" points="48.5,106.8 71.5,92.3 81.9,98.9 	"/>
-</g>
-<g id="router">
-	<polygon class="st0" points="529,111.9 539,105.6 567.5,105.6 567.5,98 539,98 529,104.3 	"/>
-	<polygon class="st0" points="578.3,115.7 568.3,109.4 538.4,109.4 538.4,101.8 568.3,101.8 578.3,108.1 	"/>
-	<polygon class="st0" points="576.5,80.8 566.5,87.1 538.1,87.1 538.1,94.6 566.5,94.6 576.5,88.3 	"/>
-	<polygon class="st0" points="527.3,77 537.2,83.3 567.1,83.3 567.1,90.8 537.2,90.8 527.3,84.5 	"/>
-	<line class="st0" x1="544.2" y1="83.3" x2="544.2" y2="101.8"/>
-	<line class="st0" x1="560" y1="87.1" x2="560" y2="109.4"/>
-	<line class="st0" x1="547.3" y1="87.1" x2="547.3" y2="105.6"/>
-	<line class="st0" x1="563.2" y1="90.8" x2="563.2" y2="109.4"/>
-	<line class="st0" x1="553.8" y1="90.8" x2="553.8" y2="105.6"/>
-	<line class="st0" x1="570.8" y1="88.1" x2="578.8" y2="83.1"/>
-	<line class="st0" x1="526.5" y1="109.6" x2="533.9" y2="105"/>
-	<line class="st0" x1="571.8" y1="108.1" x2="580.1" y2="113.3"/>
-	<line class="st0" x1="525" y1="79.4" x2="532.9" y2="84.4"/>
+<g id="mesh">
+	<polygon class="st0" points="342,60.4 352,54.1 380.5,54.1 380.5,46.5 352,46.5 342,52.8 	"/>
+	<polygon class="st0" points="391.3,64.2 381.3,57.9 351.4,57.9 351.4,50.3 381.3,50.3 391.3,56.6 	"/>
+	<polygon class="st0" points="389.5,29.3 379.5,35.6 351.1,35.6 351.1,43.1 379.5,43.1 389.5,36.8 	"/>
+	<polygon class="st0" points="340.3,25.5 350.2,31.8 380.1,31.8 380.1,39.3 350.2,39.3 340.3,33 	"/>
+	<line class="st0" x1="357.2" y1="31.8" x2="357.2" y2="50.3"/>
+	<line class="st0" x1="373" y1="35.6" x2="373" y2="57.9"/>
+	<line class="st0" x1="360.3" y1="35.6" x2="360.3" y2="54.1"/>
+	<line class="st0" x1="376.2" y1="39.3" x2="376.2" y2="57.9"/>
+	<line class="st0" x1="366.8" y1="39.3" x2="366.8" y2="54.1"/>
+	<line class="st0" x1="383.8" y1="36.6" x2="391.8" y2="31.6"/>
+	<line class="st0" x1="339.5" y1="58.1" x2="346.9" y2="53.5"/>
+	<line class="st0" x1="384.8" y1="56.6" x2="393.1" y2="61.8"/>
+	<line class="st0" x1="338" y1="27.9" x2="345.9" y2="32.9"/>
 </g>
 <g id="logger">
-	<polygon class="st0" points="226,113.1 218.4,94.6 227.7,81 235.4,99.5 	"/>
-	<polygon class="st0" points="221,113.1 213.4,94.6 222.7,81 230.4,99.5 	"/>
-	<polygon class="st0" points="216,113.1 208.4,94.6 217.7,81 225.4,99.5 	"/>
-	<polygon class="st0" points="211.1,113.1 203.4,94.6 212.8,81 220.4,99.5 	"/>
-	<polygon class="st0" points="251,113.1 243.4,94.6 252.7,81 260.4,99.5 	"/>
-	<polygon class="st0" points="246.1,113.1 238.4,94.6 247.8,81 255.4,99.5 	"/>
-	<polygon class="st0" points="241.1,113.1 233.4,94.6 242.8,81 250.4,99.5 	"/>
-	<polygon class="st0" points="236.1,113.1 228.4,94.6 237.8,81 245.4,99.5 	"/>
+	<polygon class="st0" points="169,61.6 161.4,43.1 170.7,29.5 178.4,48 	"/>
+	<polygon class="st0" points="164,61.6 156.4,43.1 165.7,29.5 173.4,48 	"/>
+	<polygon class="st0" points="159,61.6 151.4,43.1 160.7,29.5 168.4,48 	"/>
+	<polygon class="st0" points="154.1,61.6 146.4,43.1 155.8,29.5 163.4,48 	"/>
+	<polygon class="st0" points="194,61.6 186.4,43.1 195.7,29.5 203.4,48 	"/>
+	<polygon class="st0" points="189.1,61.6 181.4,43.1 190.8,29.5 198.4,48 	"/>
+	<polygon class="st0" points="184.1,61.6 176.4,43.1 185.8,29.5 193.4,48 	"/>
+	<polygon class="st0" points="179.1,61.6 171.4,43.1 180.8,29.5 188.4,48 	"/>
 </g>
-<g id="health-monitor">
-	<polygon class="st0" points="374.1,86.8 382.9,81 401.8,93.6 393,99.4 	"/>
-	<polygon class="st0" points="374.1,92.6 382.9,86.8 401.8,99.4 393,105.2 	"/>
-	<polygon class="st0" points="374.1,98.5 382.9,92.6 401.8,105.2 393,111 	"/>
-	<polygon class="st0" points="411.9,86.8 403.1,81 384.2,93.6 393,99.4 	"/>
-	<polygon class="st0" points="411.9,92.6 403.1,86.8 384.2,99.4 393,105.2 	"/>
-	<polygon class="st0" points="411.9,98.5 403.1,92.6 384.2,105.2 393,111 	"/>
-	<polygon class="st0" points="374.1,104.3 382.9,98.5 401.8,111 393,116.9 	"/>
-	<polygon class="st0" points="411.9,104.3 403.1,98.5 384.2,111 393,116.9 	"/>
-	<line class="st0" x1="403.2" y1="92.6" x2="403.2" y2="81"/>
-	<line class="st0" x1="412.4" y1="104.3" x2="412.4" y2="87"/>
-	<line class="st0" x1="373.9" y1="104.3" x2="373.9" y2="87"/>
-	<line class="st0" x1="383" y1="92.6" x2="383" y2="81"/>
+<g id="monitor">
+	<polygon class="st0" points="247.1,35.3 255.9,29.5 274.8,42.1 266,47.9 	"/>
+	<polygon class="st0" points="247.1,41.1 255.9,35.3 274.8,47.9 266,53.7 	"/>
+	<polygon class="st0" points="247.1,47 255.9,41.1 274.8,53.7 266,59.5 	"/>
+	<polygon class="st0" points="284.9,35.3 276.1,29.5 257.2,42.1 266,47.9 	"/>
+	<polygon class="st0" points="284.9,41.1 276.1,35.3 257.2,47.9 266,53.7 	"/>
+	<polygon class="st0" points="284.9,47 276.1,41.1 257.2,53.7 266,59.5 	"/>
+	<polygon class="st0" points="247.1,52.8 255.9,47 274.8,59.5 266,65.4 	"/>
+	<polygon class="st0" points="284.9,52.8 276.1,47 257.2,59.5 266,65.4 	"/>
+	<line class="st0" x1="276.2" y1="41.1" x2="276.2" y2="29.5"/>
+	<line class="st0" x1="285.4" y1="52.8" x2="285.4" y2="35.5"/>
+	<line class="st0" x1="246.9" y1="52.8" x2="246.9" y2="35.5"/>
+	<line class="st0" x1="256" y1="41.1" x2="256" y2="29.5"/>
 </g>
-<g id="glob-storage">
+<g id="warehouse">
 	
-		<rect x="678.8" y="86.2" transform="matrix(0.7071 -0.7071 0.7071 0.7071 133.9372 514.7511)" class="st0" width="19" height="19"/>
+		<rect x="451.8" y="34.7" transform="matrix(0.7071 -0.7071 0.7071 0.7071 103.8406 339.1441)" class="st0" width="19" height="19"/>
 	
-		<rect x="682.6" y="90" transform="matrix(0.7071 -0.7071 0.7071 0.7071 133.9306 514.7626)" class="st0" width="11.4" height="11.4"/>
+		<rect x="455.6" y="38.5" transform="matrix(0.7071 -0.7071 0.7071 0.7071 103.8305 339.1428)" class="st0" width="11.4" height="11.4"/>
 	
-		<rect x="689.1" y="87.9" transform="matrix(0.707 -0.7072 0.7072 0.707 136.5163 520.8838)" class="st0" width="15.6" height="15.6"/>
+		<rect x="462.1" y="36.4" transform="matrix(0.707 -0.7072 0.7072 0.707 106.4216 345.2686)" class="st0" width="15.6" height="15.6"/>
 	
-		<rect x="672.2" y="87.9" transform="matrix(0.7072 -0.707 0.707 0.7072 131.4281 508.8351)" class="st0" width="15.6" height="15.6"/>
-	
-		<rect x="702.6" y="91.5" transform="matrix(0.707 -0.7072 0.7072 0.707 139.4302 527.9078)" class="st0" width="8.4" height="8.4"/>
-	
-		<rect x="665.5" y="91.5" transform="matrix(0.7071 -0.7071 0.7071 0.7071 128.4855 501.6108)" class="st0" width="8.4" height="8.4"/>
+		<rect x="445.2" y="36.5" transform="matrix(0.7072 -0.707 0.707 0.7072 101.3414 333.2205)" class="st0" width="15.6" height="15.6"/>
+	<rect x="475.6" y="40" transform="matrix(0.707 -0.7072 0.7072 0.707 109.31 352.2859)" class="st0" width="8.4" height="8.4"/>
+	<rect x="438.5" y="40" transform="matrix(0.7071 -0.7071 0.7071 0.7071 98.3834 325.9927)" class="st0" width="8.4" height="8.4"/>
+</g>
+<g id="pusher">
+	<polyline class="st0" points="51.4,39.5 74.3,54 84.8,47.5 	"/>
+	<polyline class="st0" points="84.8,53.6 74.3,60.1 51.4,45.6 51.4,33.4 74.3,47.9 84.8,41.4 	"/>
+	<line class="st0" x1="46.9" y1="42.8" x2="69.9" y2="57.3"/>
+	<polygon class="st0" points="46.9,36.7 69.9,51.2 69.9,63.4 46.9,48.9 	"/>
+	<line class="st0" x1="84.8" y1="41.1" x2="107.7" y2="55.7"/>
+	<polyline class="st0" points="84.8,47.2 107.7,61.8 107.7,49.6 84.8,35.1 84.9,41.3 74.5,34.7 51.5,49.2 51.5,61.4 74.5,46.9 
+		84.9,53.5 	"/>
+	<polyline class="st0" points="97.2,55.3 74.2,40.8 63.8,47.4 	"/>
+	<polyline class="st0" points="63.8,41.3 74.2,34.7 97.2,49.2 97.2,61.4 74.2,46.9 63.8,53.5 	"/>
+	<polyline class="st0" points="97.3,39.5 74.3,54 63.9,47.5 	"/>
+	<polyline class="st0" points="63.9,53.6 74.3,60.1 97.3,45.6 97.3,33.4 74.3,47.9 63.9,41.4 	"/>
+	<line class="st0" x1="101.8" y1="42.8" x2="78.8" y2="57.3"/>
+	<polygon class="st0" points="101.8,36.7 78.8,51.2 78.8,63.4 101.8,48.9 	"/>
+	<polyline class="st0" points="63.9,47.2 40.9,61.8 40.9,49.6 63.9,35.1 63.9,41.1 40.9,55.7 	"/>
+	<polyline class="st0" points="51.5,55.3 74.5,40.8 84.9,47.4 	"/>
 </g>
 <g id="admin">
-	
-		<ellipse transform="matrix(0.9413 -0.3375 0.3375 0.9413 12.9302 276.1648)" class="st1" cx="800.7" cy="100.9" rx="2.4" ry="2.4"/>
-	<ellipse transform="matrix(0.9412 -0.3377 0.3377 0.9412 15.7263 276.7833)" class="st1" cx="803.4" cy="93.2" rx="2.4" ry="2.4"/>
-	<ellipse transform="matrix(0.9413 -0.3376 0.3376 0.9413 14.7768 278.7729)" class="st1" cx="808.9" cy="96.9" rx="1.5" ry="1.5"/>
-	<line class="st1" x1="801.5" y1="98.7" x2="802.7" y2="95.4"/>
-	<line class="st1" x1="807.8" y1="95.9" x2="805.6" y2="94.5"/>
-	<ellipse transform="matrix(0.8869 -0.4619 0.4619 0.8869 44.9067 378.2749)" class="st1" cx="795.1" cy="97.4" rx="1.5" ry="1.5"/>
-	<line class="st1" x1="796.3" y1="98.2" x2="798.7" y2="99.3"/>
+	<ellipse transform="matrix(0.9413 -0.3375 0.3375 0.9413 15.2265 186.3964)" class="st1" cx="543.7" cy="49.4" rx="2.4" ry="2.4"/>
+	<ellipse transform="matrix(0.9412 -0.3377 0.3377 0.9412 18.0182 186.9649)" class="st1" cx="546.4" cy="41.7" rx="2.4" ry="2.4"/>
+	<ellipse transform="matrix(0.9413 -0.3376 0.3376 0.9413 17.0745 188.9877)" class="st1" cx="551.9" cy="45.4" rx="1.5" ry="1.5"/>
+	<line class="st1" x1="544.5" y1="47.2" x2="545.7" y2="43.9"/>
+	<line class="st1" x1="550.8" y1="44.4" x2="548.6" y2="43"/>
+	<ellipse transform="matrix(0.8869 -0.4619 0.4619 0.8869 39.6385 253.7321)" class="st1" cx="538.1" cy="45.9" rx="1.5" ry="1.5"/>
+	<line class="st1" x1="539.3" y1="46.7" x2="541.7" y2="47.8"/>
 </g>
 <g id="back-arrow">
-	<polyline class="st2" points="885,104.2 879.8,99 885,93.8 	"/>
-	<line class="st2" x1="879.8" y1="99" x2="894" y2="99"/>
+	<polyline class="st2" points="608,52.7 602.8,47.5 608,42.3 	"/>
+	<line class="st2" x1="602.8" y1="47.5" x2="617" y2="47.5"/>
+</g>
+<g id="hex-warehouse">
+	<polygon id="_x3E_bg_3_" class="st3" points="376.1,146.2 352.8,159.6 329.6,146.2 329.6,119.3 352.8,105.9 376.1,119.3 	"/>
+	
+		<rect x="344.3" y="124.3" transform="matrix(0.7071 -0.7071 0.7071 0.7071 9.3691 288.5079)" class="st4" width="17.3" height="17.3"/>
+	
+		<rect x="347.7" y="127.8" transform="matrix(0.7071 -0.7071 0.7071 0.7071 9.3173 288.5218)" class="st4" width="10.4" height="10.4"/>
+	
+		<rect x="353.7" y="125.8" transform="matrix(0.707 -0.7072 0.7072 0.707 11.7288 294.0703)" class="st4" width="14.2" height="14.2"/>
+	
+		<rect x="338.3" y="125.9" transform="matrix(0.7072 -0.707 0.707 0.7072 7.1164 283.1394)" class="st4" width="14.2" height="14.2"/>
+	<rect x="366" y="129.1" transform="matrix(0.707 -0.7072 0.7072 0.707 14.3517 300.4321)" class="st4" width="7.6" height="7.6"/>
+	
+		<rect x="332.2" y="129.1" transform="matrix(0.7071 -0.7071 0.7071 0.7071 4.4003 276.4973)" class="st4" width="7.6" height="7.6"/>
+</g>
+<g id="hex-mesh">
+	<polygon id="_x3E_bg_4_" class="st3" points="304.2,146.2 280.9,159.6 257.7,146.2 257.7,119.3 280.9,105.9 304.2,119.3 	"/>
+	<polygon class="st4" points="263.7,144.7 269.1,141.4 293.9,141.4 293.9,134.8 269.1,134.8 263.7,138.1 	"/>
+	<polygon class="st4" points="298.8,147.5 294.6,144.7 268.6,144.7 268.6,138.1 294.6,138.1 298.8,140.9 	"/>
+	<polygon class="st4" points="299.7,120.8 293,125.3 268.3,125.3 268.3,131.9 293,131.9 299.7,127.3 	"/>
+	<polygon class="st4" points="262.7,118.8 267.6,122 293.5,122 293.5,128.6 267.6,128.6 262.7,125.3 	"/>
+	<line class="st4" x1="273.6" y1="122" x2="273.6" y2="138.1"/>
+	<line class="st4" x1="287.4" y1="125.3" x2="287.4" y2="144.7"/>
+	<line class="st4" x1="276.3" y1="125.3" x2="276.3" y2="141.4"/>
+	<line class="st4" x1="290.1" y1="128.6" x2="290.1" y2="144.7"/>
+	<line class="st4" x1="282" y1="128.6" x2="282" y2="141.4"/>
+	<line class="st4" x1="294.7" y1="127.1" x2="301.7" y2="122.8"/>
+	<line class="st4" x1="261.5" y1="142.7" x2="265.7" y2="140.1"/>
+	<line class="st4" x1="295.9" y1="142.6" x2="299.2" y2="144.7"/>
+	<line class="st4" x1="261.6" y1="121.4" x2="266" y2="124.4"/>
+</g>
+<g id="hex-monitor">
+	<polygon id="_x3E_bg_5_" class="st3" points="232.6,146.2 209.3,159.6 186.1,146.2 186.1,119.3 209.3,105.9 232.6,119.3 	"/>
+	<polygon class="st4" points="191.9,123.9 200,118.6 217.3,130.1 209.2,135.4 	"/>
+	<polygon class="st4" points="191.9,129.2 200,123.9 217.3,135.4 209.2,140.8 	"/>
+	<polygon class="st4" points="191.9,134.6 200,129.2 217.3,140.8 209.2,146.1 	"/>
+	<polygon class="st4" points="226.5,123.9 218.5,118.6 201.2,130.1 209.2,135.4 	"/>
+	<line class="st4" x1="226.5" y1="139.7" x2="226.5" y2="123.9"/>
+	<polygon class="st4" points="226.5,129.2 218.5,123.9 201.2,135.4 209.2,140.8 	"/>
+	<polygon class="st4" points="226.5,134.6 218.5,129.2 201.2,140.8 209.2,146.1 	"/>
+	<polygon class="st4" points="191.9,139.9 200,134.6 217.3,146.1 209.2,151.5 	"/>
+	<polygon class="st4" points="226.5,139.9 218.5,134.6 201.2,146.1 209.2,151.5 	"/>
+	<line class="st4" x1="218.6" y1="129.2" x2="218.6" y2="118.6"/>
+	<line class="st4" x1="191.7" y1="139.9" x2="191.7" y2="124.1"/>
+	<line class="st4" x1="200.1" y1="129.2" x2="200.1" y2="118.6"/>
+</g>
+<g id="hex-logger">
+	<polygon id="_x3E_bg_6_" class="st3" points="160.7,146.2 137.4,159.6 114.2,146.2 114.2,119.3 137.4,105.9 160.7,119.3 	"/>
+	<polygon class="st4" points="128.1,142.4 128.2,126.9 139.7,120.5 139.6,136 	"/>
+	<polygon class="st4" points="124.3,140.8 124.4,125.3 135.8,118.9 135.8,134.4 	"/>
+	<polygon class="st4" points="120.5,139.2 120.6,123.7 132,117.3 132,132.8 	"/>
+	<polygon class="st4" points="116.8,137.6 116.8,122.1 128.3,115.7 128.2,131.2 	"/>
+	<polygon class="st4" points="147.1,150.4 147.3,134.8 158.7,128.5 158.6,144 	"/>
+	<polygon class="st4" points="143.4,148.8 143.5,133.2 155,126.9 154.8,142.4 	"/>
+	<polygon class="st4" points="139.6,147.2 139.6,131.6 151.1,125.3 151,140.8 	"/>
+	<polygon class="st4" points="135.8,145.6 135.8,130 147.3,123.7 147.2,139.2 	"/>
+</g>
+<g id="hex-pusher">
+	<polygon id="_x3E_bg_7_" class="st3" points="89.1,146.2 65.8,159.6 42.6,146.2 42.6,119.3 65.8,105.9 89.1,119.3 	"/>
+	<path class="st4" d="M83.2,133.4"/>
+	<line class="st4" x1="86.4" y1="141.5" x2="65.6" y2="128.4"/>
+	<line class="st4" x1="84.9" y1="146.1" x2="65.6" y2="133.9"/>
+	<polyline class="st4" points="65.6,122.9 86.4,136 86.4,138.6 86.4,145.4 	"/>
+	<line class="st4" x1="86.4" y1="136" x2="69.7" y2="125.4"/>
+	<polyline class="st4" points="86.4,141.5 69.7,130.9 69.7,119.9 86.3,130.4 	"/>
+	<polyline class="st4" points="65.5,145.9 86.3,132.7 86.3,121.7 65.5,134.8 	"/>
+	<line class="st4" x1="65.7" y1="140.4" x2="75.2" y2="134.4"/>
+	<line class="st4" x1="65.7" y1="134.8" x2="75.2" y2="128.9"/>
+	<line class="st4" x1="75.2" y1="139.9" x2="65.7" y2="145.9"/>
+	<line class="st4" x1="65.6" y1="128.4" x2="75.1" y2="134.4"/>
+	<line class="st4" x1="65.6" y1="133.9" x2="75.1" y2="139.9"/>
+	<line class="st4" x1="75.1" y1="128.8" x2="65.6" y2="122.9"/>
+	<line class="st4" x1="86.3" y1="127.2" x2="65.5" y2="140.4"/>
+	<line class="st4" x1="75.1" y1="134.5" x2="86.3" y2="127.4"/>
+	<polyline class="st4" points="86.4,138.4 75.1,145.6 75.1,140.1 86.3,133 	"/>
+	<path class="st4" d="M86.4,138.6"/>
+	<path class="st4" d="M47.7,133.4"/>
+	<line class="st4" x1="44.5" y1="141.5" x2="65.3" y2="128.4"/>
+	<line class="st4" x1="46.1" y1="146.1" x2="65.3" y2="133.9"/>
+	<polyline class="st4" points="65.3,122.9 44.5,136 44.5,138.6 44.5,145.4 	"/>
+	<line class="st4" x1="44.5" y1="136" x2="61.3" y2="125.4"/>
+	<polyline class="st4" points="44.5,141.5 61.3,130.9 61.3,119.9 44.6,130.4 	"/>
+	<polyline class="st4" points="65.5,145.9 44.6,132.7 44.6,121.7 65.5,134.8 	"/>
+	<line class="st4" x1="65.2" y1="140.4" x2="55.8" y2="134.4"/>
+	<line class="st4" x1="65.2" y1="134.8" x2="55.8" y2="128.9"/>
+	<line class="st4" x1="55.8" y1="139.9" x2="65.2" y2="145.9"/>
+	<line class="st4" x1="65.3" y1="128.4" x2="55.9" y2="134.4"/>
+	<line class="st4" x1="65.3" y1="133.9" x2="55.9" y2="139.9"/>
+	<line class="st4" x1="55.9" y1="128.8" x2="65.3" y2="122.9"/>
+	<line class="st4" x1="44.6" y1="127.2" x2="65.5" y2="140.4"/>
+	<line class="st4" x1="55.9" y1="134.5" x2="44.6" y2="127.4"/>
+	<polyline class="st4" points="44.5,138.4 55.9,145.6 55.9,140.1 44.6,133 	"/>
+	<path class="st4" d="M44.5,138.6"/>
+	<path class="st4" d="M44.5,138.6"/>
 </g>
 </svg>

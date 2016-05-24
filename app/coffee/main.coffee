@@ -50,11 +50,11 @@ class PlatformComponent
 
   # ------------------------------------ Class vars and methods
 
-  @loadBalancer   : "load-balancer"
+  @loadBalancer   : "mesh"
   @logger         : "logger"
-  @healthMonitor  : "health-monitor"
-  @router         : "router"
-  @storage        : "glob-storage"
+  @healthMonitor  : "monitor"
+  @router         : "pusher"
+  @storage        : "warehouse"
 
   @getHumanName   : (id)->
     switch id

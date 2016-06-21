@@ -8,7 +8,13 @@ class PlatformComponent
   @componentKind   : The type of platform component (must be one of the class kinds listed below)
   @componentId     : Id of the component
   ###
-  constructor : (@$el, @componentKind, @componentId, @isSplitable) ->
+  constructor : (@$el, data) ->
+    @componentKind = data.componentKind
+    @componentId   = data.componentId
+    @isSplitable   = data.isSplitable
+    @showAdminCb   = data.showAdminCb
+    @resetViewCb   = data.resetViewCb
+
     Eventify.extend @
     @events     = {}
     shadowIcons = new pxicons.ShadowIcons()
@@ -37,6 +43,7 @@ class PlatformComponent
 
   buildMiniView : () =>
     @component = new MiniView @$el, @componentKind, @triggerFullView
+
   buildFullView : () =>
     @component = new FullView @$el, @componentKind, @triggerClose, @componentId, @isSplitable
     @box       = @component.box
@@ -45,8 +52,8 @@ class PlatformComponent
 
   # ------------------------------------ Events
 
-  triggerFullView : () => @fire "show-admin", @componentId
-  triggerClose    : () => @fire "close-detail-view"
+  triggerFullView : () => @showAdminCb(@componentId)
+  triggerClose    : () => @resetViewCb()
 
   # ------------------------------------ Class vars and methods
 
@@ -65,7 +72,6 @@ class PlatformComponent
       when PlatformComponent.storage       then return "Storage"
 
   @getComponentDetails : (id) ->
-    console.log "getting details for : #{id}"
 
     switch id
       when PlatformComponent.loadBalancer

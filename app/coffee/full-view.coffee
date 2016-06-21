@@ -19,8 +19,8 @@ module.exports = class FullView extends View
       id                  : @componentId
       name                : details.friendlyName
       serviceType         : @componentKind
-    @box = new nanobox.ClobberBox()
-    @box.build $('.bg-div', @$node), nanobox.ClobberBox.PLATFORM_COMPONENT, data
+    # @box = new nanobox.ClobberBox()
+    # @box.build $('.bg-div', @$node), nanobox.ClobberBox.PLATFORM_COMPONENT, data
     @setSplitability isSplitable
 
   onAdminClick : (e) ->
@@ -36,7 +36,7 @@ module.exports = class FullView extends View
     return if @isSplitable == isSplitable
     @isSplitable = isSplitable
 
-    @box.box.setSplitability isSplitable
+    # @box.box.setSplitability isSplitable
     $(".option", @$node).removeClass 'active'
 
     if isSplitable

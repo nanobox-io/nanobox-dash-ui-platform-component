@@ -22,11 +22,11 @@ resetView = () =>
 components = []
 $holder    = $ ".component-holder"
 
-loadBalancerData  = {componentKind:nanobox.PlatformComponent.loadBalancer , componentId:"lasfb1",  isSplitable:false, showAdminCb:showAdmin, resetViewCb:resetView }
-loggerData        = {componentKind:nanobox.PlatformComponent.logger       , componentId:"l3ag1",   isSplitable:false, showAdminCb:showAdmin, resetViewCb:resetView }
-healthMonitorData = {componentKind:nanobox.PlatformComponent.healthMonitor, componentId:"hasfem1", isSplitable:false, showAdminCb:showAdmin, resetViewCb:resetView }
-routerData        = {componentKind:nanobox.PlatformComponent.router       , componentId:"rtxxa1",  isSplitable:true , showAdminCb:showAdmin, resetViewCb:resetView }
-storageData       = {componentKind:nanobox.PlatformComponent.storage      , componentId:"staf1",   isSplitable:false, showAdminCb:showAdmin, resetViewCb:resetView }
+loadBalancerData  = {componentKind:nanobox.PlatformComponent.loadBalancer , componentId:"lasfb1",  isSplitable:false, mode:"simple", showAdminCb:showAdmin, resetViewCb:resetView }
+loggerData        = {componentKind:nanobox.PlatformComponent.logger       , componentId:"l3ag1",   isSplitable:false, mode:"simple", showAdminCb:showAdmin, resetViewCb:resetView }
+healthMonitorData = {componentKind:nanobox.PlatformComponent.healthMonitor, componentId:"hasfem1", isSplitable:false, mode:"simple", showAdminCb:showAdmin, resetViewCb:resetView }
+routerData        = {componentKind:nanobox.PlatformComponent.router       , componentId:"rtxxa1",  isSplitable:true , mode:"simple", showAdminCb:showAdmin, resetViewCb:resetView }
+storageData       = {componentKind:nanobox.PlatformComponent.storage      , componentId:"staf1",   isSplitable:false, mode:"simple", showAdminCb:showAdmin, resetViewCb:resetView }
 
 components.push new nanobox.PlatformComponent( $holder, loadBalancerData )
 components.push new nanobox.PlatformComponent( $holder, loggerData )

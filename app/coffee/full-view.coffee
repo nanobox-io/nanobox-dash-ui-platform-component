@@ -3,11 +3,11 @@ fullComponent = require 'jade/full-component'
 
 module.exports = class FullView extends View
 
-  constructor: ($el, @componentKind, @onCloseClick, @componentId, isSplitable) ->
+  constructor: ($el, @componentKind, @onCloseClick, @componentId, mode) ->
     super $el, @componentKind, @adminCb
-    @build $el, isSplitable
+    @build $el, mode
 
-  build : ($el, isSplitable) ->
+  build : ($el, mode) ->
     details = nanobox.PlatformComponent.getComponentDetails @componentKind
     @$node = $ fullComponent( {kind: @componentKind, name:details.friendlyName, description:details.description} )
     $el.append @$node
@@ -21,7 +21,7 @@ module.exports = class FullView extends View
       serviceType         : @componentKind
     # @box = new nanobox.ClobberBox()
     # @box.build $('.bg-div', @$node), nanobox.ClobberBox.PLATFORM_COMPONENT, data
-    @setSplitability isSplitable
+    @setSplitability mode != "simple"
 
   onAdminClick : (e) ->
     @adminCb @componentKind

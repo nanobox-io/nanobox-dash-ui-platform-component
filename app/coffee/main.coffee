@@ -12,6 +12,7 @@ class PlatformComponent
     @componentKind = data.componentKind
     @componentId   = data.componentId
     @isSplitable   = data.isSplitable
+    @mode          = data.mode
     @showAdminCb   = data.showAdminCb
     @resetViewCb   = data.resetViewCb
 
@@ -45,7 +46,7 @@ class PlatformComponent
     @component = new MiniView @$el, @componentKind, @triggerFullView
 
   buildFullView : () =>
-    @component = new FullView @$el, @componentKind, @triggerClose, @componentId, @isSplitable
+    @component = new FullView @$el, @componentKind, @triggerClose, @componentId, @mode 
     @box       = @component.box
 
   hide          :    -> @component.destroy()

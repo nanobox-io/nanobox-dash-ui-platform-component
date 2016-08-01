@@ -21,6 +21,7 @@ module.exports = class PlatformComponentShim
         id: "9e63d700-c84e-45ed-ba15-ed192fcf92b2"
         uid: "data.portal"
         name: "lucky-lime"
+        mode: "simple"
         state: "created"
         serviceType: "default-db"
         scalesHoriz: false

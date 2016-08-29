@@ -3,14 +3,14 @@ miniComponent = require 'jade/mini-component'
 
 module.exports = class MiniView extends View
 
-  constructor: ($el, @id, @onShowAdmin) ->
-    super $el, @id, @onShowAdmin
+  constructor: ($el, @kind, @id, @onShowAdmin) ->
+    super $el, @kind, @onShowAdmin
     @build $el
 
   build : ($el) ->
-    details = nanobox.PlatformComponent.getComponentDetails @id
+    details = nanobox.PlatformComponent.getComponentDetails @kind
 
-    @$node = $ miniComponent( {kind: @id, name:details.friendlyName} )
+    @$node = $ miniComponent( {kind: @kind, name:details.friendlyName} )
     $el.append @$node
     castShadows @$node
     @addStats $ ".stats-box", @$node
@@ -31,7 +31,7 @@ module.exports = class MiniView extends View
 
 
   onAdminClick : (e) ->
-    @onShowAdmin @id
+    @onShowAdmin @kind
 
   destroy : (cb) ->
     $(".ui-box", @$node).off()

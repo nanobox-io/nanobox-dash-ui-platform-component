@@ -12,10 +12,11 @@ module.exports = class PlatformComponentShim
     ]
 
   generateComponent : (kind, mode="simple") ->
-    id: "#{kind}1"
+    serviceId: "#{kind}1"
     kind: kind
     mode: mode
     isSplitable: true
+    componentIds = ['9e63d700-c84e-45ed-ba15-ed192fcf92b2']
     components: [
       {
         id: "9e63d700-c84e-45ed-ba15-ed192fcf92b2"

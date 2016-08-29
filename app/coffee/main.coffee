@@ -16,6 +16,7 @@ class PlatformComponent
     @showAdminCb   = data.showAdminCb
     @resetViewCb   = data.resetViewCb
     @componentIds  = data.componentIds
+    @componentId   = @serviceId
 
     Eventify.extend @
     @events     = {}

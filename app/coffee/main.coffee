@@ -43,10 +43,10 @@ class PlatformComponent
 
 
   buildMiniView : () =>
-    @component = new MiniView @$el, @componentKind, @triggerFullView
+    @component = new MiniView @$el, @componentKind, @componentId, @triggerFullView
 
   buildFullView : () =>
-    @component = new FullView @$el, @componentKind, @triggerClose, @componentId, @mode 
+    @component = new FullView @$el, @componentKind, @triggerClose, @componentId, @mode
     @box       = @component.box
 
   hide          :    -> @component.destroy()

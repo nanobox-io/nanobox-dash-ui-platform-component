@@ -4,6 +4,9 @@ miniComponent = require 'jade/mini-component'
 module.exports = class MiniView extends View
 
   constructor: ($el, @kind, @id, @onShowAdmin) ->
+    console.log "...."
+    console.log @kind
+    console.log @id
     super $el, @kind, @onShowAdmin
     @build $el
 

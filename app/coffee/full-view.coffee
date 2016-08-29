@@ -3,7 +3,7 @@ fullComponent = require 'jade/full-component'
 
 module.exports = class FullView extends View
 
-  constructor: ($el, @componentKind, @onCloseClick, @componentId, mode) ->
+  constructor: ($el, @componentKind, @onCloseClick, @serviceId, mode) ->
     super $el, @componentKind, @adminCb
     @build $el, mode
 
@@ -16,7 +16,7 @@ module.exports = class FullView extends View
     $(".option", @$node).on   "click", (e)=> @onOptionClick(e)
     data =
       isPlatformComponent : true
-      id                  : @componentId
+      id                  : @serviceId
       name                : details.friendlyName
       serviceType         : @componentKind
     # @box = new nanobox.ClobberBox()

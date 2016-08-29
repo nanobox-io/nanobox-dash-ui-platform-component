@@ -8,7 +8,7 @@ dataShim = new PlatformComponentShim()
 # Called when the user clicks "Admin"
 showAdmin = (id) =>
   for component in components
-    if id == component.componentId
+    if id == component.serviceId
       component.setState "full"
     else
       component.setState "hidden"
@@ -22,11 +22,11 @@ resetView = () =>
 components = []
 $holder    = $ ".component-holder"
 
-loadBalancerData  = {componentKind:nanobox.PlatformComponent.loadBalancer , componentId:"lasfb1",  isSplitable:false, mode:"simple", showAdminCb:showAdmin, resetViewCb:resetView }
-loggerData        = {componentKind:nanobox.PlatformComponent.logger       , componentId:"l3ag1",   isSplitable:false, mode:"simple", showAdminCb:showAdmin, resetViewCb:resetView }
-healthMonitorData = {componentKind:nanobox.PlatformComponent.healthMonitor, componentId:"hasfem1", isSplitable:false, mode:"simple", showAdminCb:showAdmin, resetViewCb:resetView }
-routerData        = {componentKind:nanobox.PlatformComponent.router       , componentId:"rtxxa1",  isSplitable:true , mode:"simple", showAdminCb:showAdmin, resetViewCb:resetView }
-storageData       = {componentKind:nanobox.PlatformComponent.storage      , componentId:"staf1",   isSplitable:false, mode:"simple", showAdminCb:showAdmin, resetViewCb:resetView }
+loadBalancerData  = {componentKind:nanobox.PlatformComponent.loadBalancer , serviceId:"lasfb1",  isSplitable:false, mode:"simple", showAdminCb:showAdmin, resetViewCb:resetView }
+loggerData        = {componentKind:nanobox.PlatformComponent.logger       , serviceId:"l3ag1",   isSplitable:false, mode:"simple", showAdminCb:showAdmin, resetViewCb:resetView }
+healthMonitorData = {componentKind:nanobox.PlatformComponent.healthMonitor, serviceId:"hasfem1", isSplitable:false, mode:"simple", showAdminCb:showAdmin, resetViewCb:resetView }
+routerData        = {componentKind:nanobox.PlatformComponent.router       , serviceId:"rtxxa1",  isSplitable:true , mode:"simple", showAdminCb:showAdmin, resetViewCb:resetView }
+storageData       = {componentKind:nanobox.PlatformComponent.storage      , serviceId:"staf1",   isSplitable:false, mode:"simple", showAdminCb:showAdmin, resetViewCb:resetView }
 
 components.push new nanobox.PlatformComponent( $holder, loadBalancerData )
 components.push new nanobox.PlatformComponent( $holder, loggerData )

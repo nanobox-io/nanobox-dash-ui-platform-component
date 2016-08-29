@@ -3,10 +3,7 @@ miniComponent = require 'jade/mini-component'
 
 module.exports = class MiniView extends View
 
-  constructor: ($el, @kind, @id, @onShowAdmin) ->
-    console.log "...."
-    console.log @kind
-    console.log @id
+  constructor: ($el, @kind, @id, @componentIds, @onShowAdmin) ->
     super $el, @kind, @onShowAdmin
     @build $el
 
@@ -24,7 +21,7 @@ module.exports = class MiniView extends View
       view : "micro"
       metrics     : ['cpu', 'ram']
       entity      : "component"
-      entityId    : @id
+      entityId    : @componentIds.join("&")
 
     @stats = new nanobox.HourlyStats $el, data
     @stats.build()

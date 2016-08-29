@@ -6,15 +6,16 @@ class PlatformComponent
   ###
   @$el             : Jquery element to attach to
   @componentKind   : The type of platform component (must be one of the class kinds listed below)
-  @componentId     : Id of the component
+  @serviceId     : Id of the component
   ###
   constructor : (@$el, data) ->
     @componentKind = data.componentKind
-    @componentId   = data.componentId
+    @serviceId     = data.serviceId
     @isSplitable   = data.isSplitable
     @mode          = data.mode
     @showAdminCb   = data.showAdminCb
     @resetViewCb   = data.resetViewCb
+    @componentIds  = data.componentIds
 
     Eventify.extend @
     @events     = {}
@@ -43,17 +44,17 @@ class PlatformComponent
 
 
   buildMiniView : () =>
-    @component = new MiniView @$el, @componentKind, @componentId, @triggerFullView
+    @component = new MiniView @$el, @componentKind, @serviceId, @componentIds, @triggerFullView
 
   buildFullView : () =>
-    @component = new FullView @$el, @componentKind, @triggerClose, @componentId, @mode
+    @component = new FullView @$el, @componentKind, @triggerClose, @serviceId, @mode
     @box       = @component.box
 
   hide          :    -> @component.destroy()
 
   # ------------------------------------ Events
 
-  triggerFullView : () => @showAdminCb(@componentId)
+  triggerFullView : () => @showAdminCb(@serviceId)
   triggerClose    : () => @resetViewCb()
 
   # ------------------------------------ Class vars and methods

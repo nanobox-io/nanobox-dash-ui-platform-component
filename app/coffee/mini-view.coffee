@@ -21,7 +21,7 @@ module.exports = class MiniView extends View
       view : "micro"
       metrics     : ['cpu', 'ram']
       entity      : "component"
-      entityId    : @componentIds.join("&")
+      entityId    : @componentIds.join("&component=")
 
     @stats = new nanobox.HourlyStats $el, data
     @stats.build()

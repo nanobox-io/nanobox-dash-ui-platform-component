@@ -23,7 +23,7 @@ module.exports = class MiniView extends View
       entity      : "component"
       entityId    : @id
 
-    @stats = new nanobox.HourlyStats $el, {view:"micro"}
+    @stats = new nanobox.HourlyStats $el, data
     @stats.build()
 
   updateLiveStats : (data) ->

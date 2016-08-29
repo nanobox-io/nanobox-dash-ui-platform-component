@@ -6,8 +6,8 @@
 	.st0{fill:none;stroke:#5F7C87;stroke-width:1.7432;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st1{fill:none;stroke:#678C9C;stroke-width:1.5;stroke-miterlimit:10;}
 	.st2{fill:none;stroke:#729EB0;stroke-linecap:round;stroke-miterlimit:10;}
-	.st3{fill:#5ECC81;}
-	.st4{fill:none;stroke:#2B8258;stroke-width:1.7038;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st3{fill:#58BFE8;}
+	.st4{fill:none;stroke:#2E5573;stroke-width:1.7038;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 </style>
 <g id="mesh">
 	<polygon class="st0" points="342,60.4 352,54.1 380.5,54.1 380.5,46.5 352,46.5 342,52.8 	"/>

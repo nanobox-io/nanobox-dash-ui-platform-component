@@ -17,6 +17,12 @@ module.exports = class MiniView extends View
     $(".ui-box", @$node).on "click", (e)=> @onAdminClick(e)
 
   addStats : ($el) ->
+    data =
+      view : "micro"
+      metrics     : ['cpu', 'ram']
+      entity      : "component"
+      entityId    : @id
+
     @stats = new nanobox.HourlyStats $el, {view:"micro"}
     @stats.build()
 

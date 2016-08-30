@@ -85,22 +85,22 @@ class PlatformComponent
       when PlatformComponent.logger
         return {
           friendlyName : "Logger"
-          description  : "Logger placeholder, All web requests are routed through the load balancer. If your app has a horizontally scaled web service, the load balancer round-robins requests to your various web instances. If you need redundancy, switch to Scalable"
+          description  : "The logger captures and stores logs from your app's components."
         }
       when PlatformComponent.healthMonitor
         return {
-          friendlyName : "Health Monitor"
-          description  : "Dummy text, all web requests are routed through the load balancer. If your app has a horizontally scaled web service, the load balancer round-robins requests to your various web instances. If you need redundancy, switch to Scalable"
+          friendlyName : "Monitor"
+          description  : "The monitor component tracks and stores resource usage (RAM, CPU, Disk, etc.) of components and nodes."
         }
       when PlatformComponent.router
         return {
-          friendlyName : "Router"
-          description  : "Lorem ipsum all web requests are routed through the load balancer. If your app has a horizontally scaled web service, the load balancer round-robins requests to your various web instances. If you need redundancy, switch to Scalable"
+          friendlyName : "Message Bus"
+          description  : "The message bus pushes data such as resource usage metrics and logs to the Nanobox dashboard/API for live updates."
         }
       when PlatformComponent.storage
         return {
-          friendlyName : "Glob Storage"
-          description  : "Placeholder text all web requests are routed through the load balancer. If your app has a horizontally scaled web service, the load balancer round-robins requests to your various web instances. If you need redundancy, switch to Scalable"
+          friendlyName : "Warehouse"
+          description  : "The warehouse is a storage component that houses files and data required for Nanobox apps. This includes code builds and data backups."
         }
 
 

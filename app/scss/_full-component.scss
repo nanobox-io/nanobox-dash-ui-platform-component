@@ -31,7 +31,7 @@
   // TODO : Figure out how to show the background..
   .component-div {
     .bg-div      { padding-top: 30px; margin-top:20px; position: relative;
-      &:before   { position:absolute; height:calc(100% - 40px); background:#f0f3f5; border:solid white 1px; content:""; width:597px; display:block; top:-0px;}
+      &:before   { position:absolute; height:calc(100% - 426px); background:#f0f3f5; border:solid white 1px; content:""; width:600px; display:block; top:-0px;}
     }
   }
 }

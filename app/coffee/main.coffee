@@ -78,30 +78,30 @@ class PlatformComponent
 
     switch id
       when PlatformComponent.loadBalancer
-        return {
+        return
           friendlyName : "Load Balancer"
           description  : "All web requests are routed through the load balancer. If your app has a horizontally scaled web service, the load balancer round-robins requests to your various web instances. If you need redundancy, switch to Scalable"
-        }
+
       when PlatformComponent.logger
-        return {
+        return
           friendlyName : "Logger"
           description  : "The logger captures and stores logs from your app's components."
-        }
+
       when PlatformComponent.healthMonitor
-        return {
+        return
           friendlyName : "Monitor"
           description  : "The monitor component tracks and stores resource usage (RAM, CPU, Disk, etc.) of components and nodes."
-        }
+        
       when PlatformComponent.router
-        return {
+        return
           friendlyName : "Message Bus"
           description  : "The message bus pushes data such as resource usage metrics and logs to the Nanobox dashboard/API for live updates."
-        }
+
       when PlatformComponent.storage
-        return {
+        return
           friendlyName : "Warehouse"
           description  : "The warehouse is a storage component that houses files and data required for Nanobox apps. This includes code builds and data backups."
-        }
+
 
 
 window.nanobox ||= {}

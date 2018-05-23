@@ -6,7 +6,7 @@ class PlatformComponent
   ###
   @$el             : Jquery element to attach to
   @componentKind   : The type of platform component (must be one of the class kinds listed below)
-  @serviceId     : Id of the component
+  @serviceId       : Id of the component
   ###
   constructor : (@$el, data) ->
     @componentKind = data.componentKind
@@ -91,7 +91,7 @@ class PlatformComponent
         return
           friendlyName : "Monitor"
           description  : "The monitor component tracks and stores resource usage (RAM, CPU, Disk, etc.) of components and nodes."
-        
+
       when PlatformComponent.router
         return
           friendlyName : "Message Bus"

@@ -27,9 +27,11 @@ loggerData        = {componentKind:nanobox.PlatformComponent.logger       , serv
 healthMonitorData = {componentKind:nanobox.PlatformComponent.healthMonitor, serviceId:"hasfem1", isSplitable:false, mode:"simple", showAdminCb:showAdmin, resetViewCb:resetView, componentIds:['9e63d700-c84e-45ed-ba15-ed192fcf92b2'] }
 routerData        = {componentKind:nanobox.PlatformComponent.router       , serviceId:"rtxxa1",  isSplitable:true , mode:"simple", showAdminCb:showAdmin, resetViewCb:resetView, componentIds:['9e63d700-c84e-45ed-ba15-ed192fcf92b2'] }
 storageData       = {componentKind:nanobox.PlatformComponent.storage      , serviceId:"staf1",   isSplitable:false, mode:"simple", showAdminCb:showAdmin, resetViewCb:resetView, componentIds:['9e63d700-c84e-45ed-ba15-ed192fcf92b2'] }
+resolverData      = {componentKind:nanobox.PlatformComponent.resolver     , serviceId:"i929bn",  isSplitable:false, mode:"simple", showAdminCb:showAdmin, resetViewCb:resetView, componentIds:['9e63d700-c84e-45ed-ba15-ed192fcf92b2'] }
 
 console.log loadBalancerData
 
+components.push new nanobox.PlatformComponent( $holder, resolverData )
 components.push new nanobox.PlatformComponent( $holder, loadBalancerData )
 components.push new nanobox.PlatformComponent( $holder, loggerData )
 components.push new nanobox.PlatformComponent( $holder, healthMonitorData )

@@ -9,6 +9,7 @@ module.exports = class PlatformComponentShim
       @generateComponent nanobox.PlatformComponent.healthMonitor, 'scalable'
       @generateComponent nanobox.PlatformComponent.router
       @generateComponent nanobox.PlatformComponent.storage
+      @generateComponent nanobox.PlatformComponent.resolver
     ]
 
   generateComponent : (kind, mode="simple") ->

@@ -65,6 +65,7 @@ class PlatformComponent
   @healthMonitor  : "monitor"
   @router         : "pusher"
   @storage        : "warehouse"
+  @resolver       : "resolver"
 
   @getHumanName   : (id)->
     switch id
@@ -73,6 +74,7 @@ class PlatformComponent
       when PlatformComponent.healthMonitor then return "Health Monitor"
       when PlatformComponent.router        then return "Router"
       when PlatformComponent.storage       then return "Storage"
+      when PlatformComponent.resolver      then return "Resolver"
 
   @getComponentDetails : (id) ->
 
@@ -100,6 +102,11 @@ class PlatformComponent
       when PlatformComponent.storage
         return
           friendlyName : "Warehouse"
+          description  : "The warehouse is a storage component that houses files and data required for Nanobox apps. This includes code builds and data backups."
+
+      when PlatformComponent.resolver
+        return
+          friendlyName : "Resolver"
           description  : "The warehouse is a storage component that houses files and data required for Nanobox apps. This includes code builds and data backups."
 
 
